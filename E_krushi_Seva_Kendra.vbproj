@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BAF9C95D-122C-4167-B976-E09AEF266DDF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>E_krushi_Seva_Kendra.My.MyApplication</StartupObject>
+    <RootNamespace>E_krushi_Seva_Kendra</RootNamespace>
+    <AssemblyName>E_krushi_Seva_Kendra</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>E_krushi_Seva_Kendra.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>E_krushi_Seva_Kendra.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common_Class.vb" />
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Menu.Designer.vb">
+      <DependentUpon>Main_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="uc_ Compound_Fertilizers.Designer.vb">
+      <DependentUpon>uc_ Compound_Fertilizers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_ Compound_Fertilizers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_About_Fertilizers.Designer.vb">
+      <DependentUpon>uc_About_Fertilizers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_About_Fertilizers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Add_New_Customer.Designer.vb">
+      <DependentUpon>uc_Add_New_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Add_New_Customer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Add_New_Product.Designer.vb">
+      <DependentUpon>uc_Add_New_Product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Add_New_Product.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Add_New_Stock.Designer.vb">
+      <DependentUpon>uc_Add_New_Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Add_New_Stock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Change_Password.Designer.vb">
+      <DependentUpon>uc_Change_Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Change_Password.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Complete_Fertilizer %28NPK%29.Designer.vb">
+      <DependentUpon>uc_Complete_Fertilizer %28NPK%29.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Complete_Fertilizer %28NPK%29.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uc_Delete_User.Designer.vb">
+      <DependentUpon>uc_Delete_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Delete_User.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Nitrogenous_Fertilizers.Designer.vb">
+      <DependentUpon>uc_Nitrogenous_Fertilizers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Nitrogenous_Fertilizers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Nitrogenous_Fertilizers2.Designer.vb">
+      <DependentUpon>uc_Nitrogenous_Fertilizers2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Nitrogenous_Fertilizers2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Organic_Nitrogenous_Fertilizers.Designer.vb">
+      <DependentUpon>uc_Organic_Nitrogenous_Fertilizers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Organic_Nitrogenous_Fertilizers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Phosphate_Fertilizers.Designer.vb">
+      <DependentUpon>uc_Phosphate_Fertilizers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Phosphate_Fertilizers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Potassic_Fertilizers.Designer.vb">
+      <DependentUpon>uc_Potassic_Fertilizers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Potassic_Fertilizers.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Update_Customer.Designer.vb">
+      <DependentUpon>uc_Update_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Update_Customer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Update_Product.Designer.vb">
+      <DependentUpon>uc_Update_Product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Update_Product.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Add_New_User.Designer.vb">
+      <DependentUpon>uc_Add_New_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_Add_New_User.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_View_Customer.Designer.vb">
+      <DependentUpon>uc_View_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_View_Customer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_View_Product_Details.Designer.vb">
+      <DependentUpon>uc_View_Product_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_View_Product_Details.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_View_stock.Designer.vb">
+      <DependentUpon>uc_View_stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc_View_stock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Menu.resx">
+      <DependentUpon>Main_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_ Compound_Fertilizers.resx">
+      <DependentUpon>uc_ Compound_Fertilizers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_About_Fertilizers.resx">
+      <DependentUpon>uc_About_Fertilizers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Add_New_Customer.resx">
+      <DependentUpon>uc_Add_New_Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Add_New_Product.resx">
+      <DependentUpon>uc_Add_New_Product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Add_New_Stock.resx">
+      <DependentUpon>uc_Add_New_Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Change_Password.resx">
+      <DependentUpon>uc_Change_Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Complete_Fertilizer %28NPK%29.resx">
+      <DependentUpon>uc_Complete_Fertilizer %28NPK%29.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Delete_User.resx">
+      <DependentUpon>uc_Delete_User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Nitrogenous_Fertilizers.resx">
+      <DependentUpon>uc_Nitrogenous_Fertilizers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Nitrogenous_Fertilizers2.resx">
+      <DependentUpon>uc_Nitrogenous_Fertilizers2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Organic_Nitrogenous_Fertilizers.resx">
+      <DependentUpon>uc_Organic_Nitrogenous_Fertilizers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Phosphate_Fertilizers.resx">
+      <DependentUpon>uc_Phosphate_Fertilizers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Potassic_Fertilizers.resx">
+      <DependentUpon>uc_Potassic_Fertilizers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Update_Customer.resx">
+      <DependentUpon>uc_Update_Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Update_Product.resx">
+      <DependentUpon>uc_Update_Product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_Add_New_User.resx">
+      <DependentUpon>uc_Add_New_User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_View_Customer.resx">
+      <DependentUpon>uc_View_Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_View_Product_Details.resx">
+      <DependentUpon>uc_View_Product_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_View_stock.resx">
+      <DependentUpon>uc_View_stock.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobile-app-for-farmers-loan-waiver-scheme-maharashtra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29 %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gettyimages-923212310-2048x2048.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back-2-2-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
